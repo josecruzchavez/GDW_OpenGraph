@@ -33,13 +33,13 @@
                 </field>
 
                 <field id="opengraph_product_condition_status" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Usar un atributo para la condición de producto ?</label>
+                    <label>¿Agegar Condición de producto?</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <config_path>gdw/seo_opengraph/facebook_condition_status</config_path>
                 </field>
 
                 <field id="opengraph_product_condition" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Facebook Product Condition</label>
+                    <label>Atributo para condición del producto</label>
                     <source_model>GDW\OpenGraph\Model\Config\Source\ProductFields</source_model>
                     <config_path>gdw/seo_opengraph/facebook_condition</config_path>
                     <depends>
@@ -47,19 +47,27 @@
                     </depends>
                 </field>
 
-                <field id="opengraph_product_brand_status" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Enabled</label>
+                <field id="opengraph_product_brand_status" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>¿Agregar Marca de producto?</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <config_path>gdw/seo_opengraph/facebook_brand_status</config_path>
                 </field>
 
-                <field id="opengraph_product_brand" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Facebook Product Condition</label>
+                <field id="opengraph_product_brand" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Atributo para la marca del producto</label>
                     <source_model>GDW\OpenGraph\Model\Config\Source\ProductFields</source_model>
                     <config_path>gdw/seo_opengraph/facebook_brand</config_path>
                     <depends>
                         <field id="opengraph_product_brand_status">1</field>
                     </depends>
+                </field>
+            </group>
+        </section>
+        <section id="gdwcoremodulelist">
+            <group id="gdwopengraphinfo" type="text" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>GDW OpenGraph Info</label>
+                <field id="gdwopengraphinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <frontend_model>GDW\OpenGraph\Block\Adminhtml\System\Core\ModuleInfoFull</frontend_model>
                 </field>
             </group>
         </section>
