@@ -56,12 +56,12 @@ php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy
 php bin/magento cache:flush
 ```
-<br/>
+
 ### Expresiones de Gratitud
 
-👉 Comenta a otros sobre este proyecto 📢
-👉 Da las gracias públicamente
-[👉 Invítame una cerveza 🍺](https://www.paypal.me/gestiondigitalweb)
-[👉 Visita mi sitio web](https://gestiondigitalweb.com/?utm_source=github&utm_medium=gdw&utm_campaign=opengraph&utm_id=link)
-[👉 Sígueme en YouTube](https://www.youtube.com/c/Gestiondigitalweb)
-[👉 Sígueme en Facebook](https://www.facebook.com/GestionDigitalWeb)
+* Comenta a otros sobre este proyecto 📢
+* Da las gracias públicamente
+* [Invítame una cerveza 🍺](https://www.paypal.me/gestiondigitalweb)
+* [Visita mi sitio web](https://gestiondigitalweb.com/?utm_source=github&utm_medium=gdw&utm_campaign=opengraph&utm_id=link)
+* [Sígueme en YouTube](https://www.youtube.com/c/Gestiondigitalweb)
+* [Sígueme en Facebook](https://www.facebook.com/GestionDigitalWeb)
