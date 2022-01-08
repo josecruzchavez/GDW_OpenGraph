@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+   <fieldset name="search_engine_optimization">
+        <field name="opengraph_image" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                    <item name="sortOrder" xsi:type="number">201</item>
+                    <item name="notice" xsi:type="string">Imagen de 1200px x 360px</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Opengraph Imagen</label>
+                <dataScope>opengraph_image</dataScope>
+            </settings>
+        </field>
+    </fieldset>
+</form>

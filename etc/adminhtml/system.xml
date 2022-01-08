@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="gdwseo">
+            <class>separator-top</class>
+            <label>SEO</label>
+            <tab>gdwcore</tab>
+            <group id="opengraph" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>OpenGraph</label>
+
+                <field id="opengraph_image_base" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Imagen Base</label>
+                    <config_path>gdw/seo_opengraph/image_base</config_path>
+                    <comment>Tamaño recomendado: 1200px x630px</comment>
+                </field>
+
+                <field id="opengraph_twitter_card" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter Card</label>
+                    <source_model>GDW\OpenGraph\Model\Config\Source\TwitterCard</source_model>
+                    <config_path>gdw/seo_opengraph/twitter_card</config_path>
+                </field>
+
+                <field id="opengraph_twitter_creator" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter Creator</label>
+                    <config_path>gdw/seo_opengraph/twitter_creator</config_path>
+                    <comment>@GestionDigitalW</comment>
+                </field>
+
+                <field id="opengraph_twitter_site" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter Site</label>
+                    <config_path>gdw/seo_opengraph/twitter_site</config_path>
+                    <comment>@GestionDigitalW</comment>
+                </field>
+
+                <field id="opengraph_product_condition_status" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Usar un atributo para la condición de producto ?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>gdw/seo_opengraph/facebook_condition_status</config_path>
+                </field>
+
+                <field id="opengraph_product_condition" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook Product Condition</label>
+                    <source_model>GDW\OpenGraph\Model\Config\Source\ProductFields</source_model>
+                    <config_path>gdw/seo_opengraph/facebook_condition</config_path>
+                    <depends>
+                        <field id="opengraph_product_condition_status">1</field>
+                    </depends>
+                </field>
+
+                <field id="opengraph_product_brand_status" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>gdw/seo_opengraph/facebook_brand_status</config_path>
+                </field>
+
+                <field id="opengraph_product_brand" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook Product Condition</label>
+                    <source_model>GDW\OpenGraph\Model\Config\Source\ProductFields</source_model>
+                    <config_path>gdw/seo_opengraph/facebook_brand</config_path>
+                    <depends>
+                        <field id="opengraph_product_brand_status">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

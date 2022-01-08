@@ -1,0 +1,37 @@
+{
+  "name": "gdw/opengraph",
+  "description": "Tags OpenGraph for Magento 2",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "José Cruz Chávez",
+      "email": "josecruz@gestiondigitalweb.com",
+      "homepage": "https://gestiondigitalweb.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "gdw/core": "^2.0"
+  },
+  "minimum-stability": "dev",
+  "keywords": [
+    "seo",
+    "free",
+    "magento 2",
+    "facebook",
+    "twitter", 
+    "opengraph",
+    "whatsapp",
+    "schema"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "GDW\\OpenGraph\\": ""
+    }
+  }
+}
