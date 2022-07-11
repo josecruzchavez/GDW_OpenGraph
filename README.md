@@ -16,7 +16,7 @@ Las etiquetas opengraph sirven para darle un mejor aspecto a los enlaces cuando 
 * Se puede editar la imagen destacada por página(cms), productos y categorías.
 * Permite seleccionar el campo para la condición del producto.
 * Permite seleccionar el campo para la Marca del producto.
-* Da prioridad a la imagen base en los porductos.
+* Da prioridad a la imagen base en los productos.
 * Este módulo es totalmente gratis.
 <br/>
 
@@ -59,9 +59,14 @@ php bin/magento cache:flush
 
 ### Expresiones de Gratitud
 
-* Comenta a otros sobre este proyecto 📢
-* Da las gracias públicamente
-* [Invítame una cerveza 🍺](https://www.paypal.me/gestiondigitalweb)
-* [Visita mi sitio web](https://gestiondigitalweb.com/?utm_source=github&utm_medium=gdw&utm_campaign=opengraph&utm_id=link)
-* [Sígueme en YouTube](https://www.youtube.com/c/Gestiondigitalweb)
-* [Sígueme en Facebook](https://www.facebook.com/GestionDigitalWeb)
+* 📢 Comenta a otros sobre este proyecto.
+* 👨🏽‍💻 Da las gracias públicamente.
+* [🍺 Invítame una cerveza](https://www.paypal.me/gestiondigitalweb)
+
+
+### Otros enlaces
+
+* [ Sitio web](https://gestiondigitalweb.com/?utm_source=github&utm_medium=gdw&utm_campaign=opengraph&utm_id=link)
+* [Listado de Módulos](https://gestiondigitalweb.com/gdw-modulos/index.php)
+* [Facebook](https://www.facebook.com/GestionDigitalWeb)
+* [Youtube](https://www.youtube.com/c/Gestiondigitalweb)
