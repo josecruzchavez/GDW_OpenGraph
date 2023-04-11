@@ -4,17 +4,16 @@ namespace GDW\OpenGraph\Model\Config\Source;
 class ProductFields implements \Magento\Framework\Data\OptionSourceInterface
 {
 
-  private $_attributeCollectionFactory;
+	private $_attributeCollectionFactory;
 
 	public function __construct(\Magento\Catalog\Model\ResourceModel\Product\Attribute\CollectionFactory $attributeCollectionFactory)
 	{
 		$this->_attributeCollectionFactory = $attributeCollectionFactory;
 	}
 
- public function toOptionArray()
- {
-
-  $arr = [];
+ 	public function toOptionArray()
+ 	{
+		$arr = [];
 		$attributesCollection = $this->_attributeCollectionFactory->create();
 		foreach ($attributesCollection as $attribute) {
 			$arr[] = array(
@@ -23,5 +22,5 @@ class ProductFields implements \Magento\Framework\Data\OptionSourceInterface
 			);
 		}
 		return $arr;
- }
+ 	}
 }

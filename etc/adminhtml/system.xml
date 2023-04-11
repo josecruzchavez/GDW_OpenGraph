@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
+     
         <section id="gdwseo">
-            <class>separator-top</class>
-            <label>SEO</label>
-            <tab>gdwcore</tab>
+            <group id="gdwcoreabout" type="text" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Acerca de</label>
+                <frontend_model>GDW\Core\Block\Adminhtml\System\Core\GlobalAds</frontend_model>
+            </group>
+
             <group id="opengraph" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>OpenGraph</label>
-
                 <field id="opengraph_image_base" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Imagen Base</label>
                     <config_path>gdw/seo_opengraph/image_base</config_path>
@@ -65,7 +67,7 @@
         </section>
         <section id="gdwcoremodulelist">
             <group id="gdwopengraphinfo" type="text" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>GDW OpenGraph Info</label>
+                <label>GDW OpenGraph</label>
                 <field id="gdwopengraphinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <frontend_model>GDW\OpenGraph\Block\Adminhtml\System\Core\ModuleInfoFull</frontend_model>
                 </field>
