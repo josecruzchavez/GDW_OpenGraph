@@ -12,7 +12,7 @@ class SeoRender
 {
     protected $page;
     protected $request;
-    protected $helpData;
+    protected $helperData;
     protected $eavConfig;
     protected $pageConfig;
 
@@ -20,14 +20,14 @@ class SeoRender
         Page $page,
         Http $request,
         Config $eavConfig,  
-        HelperData $helpData,
+        HelperData $helperData,
         PageConfig $pageConfig
     )
     {
         $this->page = $page;
         $this->request = $request;
         $this->eavConfig = $eavConfig;
-        $this->helperData = $helpData;
+        $this->helperData = $helperData;
         $this->pageConfig = $pageConfig; 
     }
 
