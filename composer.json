@@ -1,42 +1,43 @@
 {
-  "name": "gdw/opengraph",
-  "description": "Tags OpenGraph for Magento 2",
-  "type": "magento2-module",
-  "version": "1.0.3",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "José Cruz Chávez",
-      "email": "jcruz@gdw.mx",
-      "homepage": "https://gdw.mx",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": "^7.2||^8.0",
-    "gdw/core": "^2.0"
-  },
-  "minimum-stability": "dev",
-  "keywords": [
-    "seo",
-    "free",
-    "magento 2",
-    "facebook",
-    "twitter", 
-    "opengraph",
-    "whatsapp",
-    "schema",
-    "facebook",
-    "metatag",
-    "gdw",
-    "gestion digital web"
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
+    "name": "gdw/opengraph",
+    "description": "Tags OpenGraph for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.4",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jos\u00e9 Cruz Ch\u00e1vez",
+            "email": "jcruz@gdw.mx",
+            "homepage": "https://gdw.mx",
+            "role": "Developer"
+        }
     ],
-    "psr-4": {
-      "GDW\\OpenGraph\\": ""
+    "require": {
+        "php": ">=7.4 <8.3",
+        "gdw/core": "^3.0",
+        "magento/framework": ">=102.0.0 <104.0.0"
+    },
+    "minimum-stability": "dev",
+    "keywords": [
+        "seo",
+        "free",
+        "magento 2",
+        "facebook",
+        "twitter",
+        "opengraph",
+        "whatsapp",
+        "schema",
+        "facebook",
+        "metatag",
+        "gdw",
+        "gestion digital web"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "GDW\\OpenGraph\\": ""
+        }
     }
-  }
 }
