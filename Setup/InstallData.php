@@ -2,11 +2,12 @@
 
 namespace GDW\OpenGraph\Setup;
 
-use \Magento\Eav\Model\Config;
+use Magento\Catalog\Setup\CategorySetup;
+use Magento\Eav\Model\Config;
 use Magento\Catalog\Model\Product;
 use Magento\Catalog\Model\Category;
-use Magento\Eav\Setup\EavSetupFactory;
-use Magento\Catalog\Setup\CategorySetupFactory;
+use Magento\Eav\Setup\EavSetup;
+use Magento\Framework\ObjectManagerInterface;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
@@ -19,17 +20,14 @@ use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
 class InstallData implements InstallDataInterface
 {
     protected $eavConfig;
-    protected $eavSetupFactory;
-    protected $categorySetupFactory;
+    protected $objectManager;
     
     public function __construct(
         Config $eavConfig,
-        EavSetupFactory $eavSetupFactory,
-        CategorySetupFactory $categorySetupFactory
+        ObjectManagerInterface $objectManager
     ) {
         $this->eavConfig = $eavConfig;
-        $this->eavSetupFactory = $eavSetupFactory;
-        $this->categorySetupFactory = $categorySetupFactory;
+        $this->objectManager = $objectManager;
     }
 
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
@@ -37,7 +35,8 @@ class InstallData implements InstallDataInterface
         $setup->startSetup();
         
         /* Product attributes */
-        $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
+        /** @var EavSetup $eavSetup */
+        $eavSetup = $this->objectManager->create(EavSetup::class, ['setup' => $setup]);
         if(!$this->isAttributeExists(Product::ENTITY, 'opengraph_image')){
             $eavSetup->addAttribute(Product::ENTITY, 'opengraph_image', [
                 'type' => 'text',
@@ -67,7 +66,8 @@ class InstallData implements InstallDataInterface
         }
 
     /* Category attribute */
-        $categorySetup = $this->categorySetupFactory->create(['setup' => $setup]);
+        /** @var CategorySetup $categorySetup */
+        $categorySetup = $this->objectManager->create(CategorySetup::class, ['setup' => $setup]);
         if(!$this->isAttributeExists(Category::ENTITY, 'opengraph_image')){
             $categorySetup->addAttribute(Category::ENTITY, 'opengraph_image', 
                 [
