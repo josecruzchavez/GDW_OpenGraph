@@ -65,13 +65,5 @@
                 </field>
             </group>
         </section>
-        <section id="gdwcoremodulelist">
-            <group id="gdwopengraphinfo" type="text" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>GDW OpenGraph</label>
-                <field id="gdwopengraphinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <frontend_model>GDW\OpenGraph\Block\Adminhtml\System\Core\ModuleInfoFull</frontend_model>
-                </field>
-            </group>
-        </section>
     </system>
 </config>
