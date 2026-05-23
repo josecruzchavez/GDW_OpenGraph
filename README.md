@@ -73,8 +73,12 @@ php bin/magento cache:flush
 * [Facebook](https://www.facebook.com/GestionDigitalWeb)
 * [Youtube](https://www.youtube.com/c/Gestiondigitalweb)
 
-## Changelog
 
-Consulta el changelog del modulo en:
+### Documentación
+
+- [https://docs.gdw.mx/modulos/gdw_opengraph](https://docs.gdw.mx/modulos/gdw_opengraph)
+
+### Changelog
+Consulta el changelog del módulo en:
 
 - [https://docs.gdw.mx/modulos/gdw_opengraph/changelog](https://docs.gdw.mx/modulos/gdw_opengraph/changelog)
