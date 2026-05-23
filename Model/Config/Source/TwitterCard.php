@@ -3,6 +3,9 @@ namespace GDW\OpenGraph\Model\Config\Source;
 
 class TwitterCard implements \Magento\Framework\Data\OptionSourceInterface
 {
+ /**
+  * @return array<int, array{value:string, label:\Magento\Framework\Phrase}>
+  */
  public function toOptionArray()
  {
   return [

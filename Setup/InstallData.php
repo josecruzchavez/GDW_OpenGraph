@@ -19,8 +19,8 @@ use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
  */
 class InstallData implements InstallDataInterface
 {
-    protected $eavConfig;
-    protected $objectManager;
+    protected Config $eavConfig;
+    protected ObjectManagerInterface $objectManager;
     
     public function __construct(
         Config $eavConfig,
@@ -30,14 +30,14 @@ class InstallData implements InstallDataInterface
         $this->objectManager = $objectManager;
     }
 
-    public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context): void
     {
         $setup->startSetup();
         
         /* Product attributes */
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->objectManager->create(EavSetup::class, ['setup' => $setup]);
-        if(!$this->isAttributeExists(Product::ENTITY, 'opengraph_image')){
+        if (!$this->isAttributeExists(Product::ENTITY, 'opengraph_image')) {
             $eavSetup->addAttribute(Product::ENTITY, 'opengraph_image', [
                 'type' => 'text',
                 'backend' => '',
@@ -68,7 +68,7 @@ class InstallData implements InstallDataInterface
     /* Category attribute */
         /** @var CategorySetup $categorySetup */
         $categorySetup = $this->objectManager->create(CategorySetup::class, ['setup' => $setup]);
-        if(!$this->isAttributeExists(Category::ENTITY, 'opengraph_image')){
+        if (!$this->isAttributeExists(Category::ENTITY, 'opengraph_image')) {
             $categorySetup->addAttribute(Category::ENTITY, 'opengraph_image', 
                 [
                     'type'      => 'text',
@@ -90,9 +90,9 @@ class InstallData implements InstallDataInterface
         $setup->endSetup();
     }
 
-    public function isAttributeExists($type, $field)
+    public function isAttributeExists(string $type, string $field): bool
     {
         $attr = $this->eavConfig->getAttribute($type, $field);
-        return ($attr && $attr->getId());
+        return (bool) $attr->getId();
     }
 }
