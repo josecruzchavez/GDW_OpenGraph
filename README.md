@@ -1,10 +1,6 @@
 # GDW OpenGraph para Magento 2
 [![Latest Stable Version](https://img.shields.io/packagist/v/gdw/opengraph?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![PHP Version Require](https://img.shields.io/packagist/dependency-v/gdw/opengraph/php?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![Magento Framework Require](https://img.shields.io/packagist/dependency-v/gdw/opengraph/magento%2Fframework?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![License](https://img.shields.io/packagist/l/gdw/opengraph?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph)
 
-
-
-
-
 Este módulo tiene la finalidad de agregar las etiquetas opengraph a magento 2.
 Las etiquetas opengraph sirven para darle un mejor aspecto a los enlaces cuando son compartidos en facebook, twitter, whatsapp principalmente.
 ## Compatibilidad
@@ -76,9 +72,3 @@ php bin/magento cache:flush
 * [Listado de Módulos](https://gdw.mx/modulos/)
 * [Facebook](https://www.facebook.com/GestionDigitalWeb)
 * [Youtube](https://www.youtube.com/c/Gestiondigitalweb)
-
-## Changelog
-
-Consulta el changelog del modulo en:
-
-- [https://docs.gdw.mx/modulos/gdw_opengraph/changelog](https://docs.gdw.mx/modulos/gdw_opengraph/changelog)
