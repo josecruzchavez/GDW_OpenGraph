@@ -8,7 +8,9 @@
 Este módulo tiene la finalidad de agregar las etiquetas opengraph a magento 2.
 Las etiquetas opengraph sirven para darle un mejor aspecto a los enlaces cuando son compartidos en facebook, twitter, whatsapp principalmente.
 ## Compatibilidad
-✓ Magento 2.4.4+ (rama 4.4.x)
+- Rama 4.4.x: Magento 2.4.4+ con PHP 8.1 a 8.3
+- Rama 4.x: Magento 2.4.0 a 2.4.3 con PHP 7.4
+- Rama 3.x: Magento 2.3.x con PHP 7.4
 
 ![gdw_opengraph](https://medios.gdw.mx/github_assets/gdw_opengraph/gdw_open_graph_base.png)
 
@@ -55,7 +57,7 @@ php bin/magento cache:flush
 ### Eliminación
 
 ```
-php bin/magento module:disbale GDW_OpenGraph
+php bin/magento module:disable GDW_OpenGraph
 composer remove gdw/opengraph
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
