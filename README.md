@@ -1,14 +1,10 @@
 # GDW OpenGraph para Magento 2
 [![Latest Stable Version](https://img.shields.io/packagist/v/gdw/opengraph?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![PHP Version Require](https://img.shields.io/packagist/dependency-v/gdw/opengraph/php?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![Magento Framework Require](https://img.shields.io/packagist/dependency-v/gdw/opengraph/magento%2Fframework?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph) [![License](https://img.shields.io/packagist/l/gdw/opengraph?style=for-the-badge)](https://packagist.org/packages/gdw/opengraph)
 
-
-
-
-
 Este módulo tiene la finalidad de agregar las etiquetas opengraph a magento 2.
 Las etiquetas opengraph sirven para darle un mejor aspecto a los enlaces cuando son compartidos en facebook, twitter, whatsapp principalmente.
 ## Compatibilidad
-- Rama 4.4.x: Magento 2.4.4+ con PHP 8.1 a 8.3
+- Rama 4.4.x: Magento 2.4.4+ con PHP 8.1+
 - Rama 4.x: Magento 2.4.0 a 2.4.3 con PHP 7.4
 - Rama 3.x: Magento 2.3.x con PHP 7.4
 
@@ -18,7 +14,7 @@ Las etiquetas opengraph sirven para darle un mejor aspecto a los enlaces cuando 
 * Agrega tag OpenGraph en páginas(cms), productos y categorías.
 * Sustituye el OpenGraph simple de productos.
 * Utiliza los campos "meta" nativos de magento.
-* Compaltible con multitiendas.
+* Compatible con multitiendas.
 * Muestra la moneda e idioma por tienda.
 * Crea un nuevo atributo para la imagen destacada de forma global.
 * Se puede editar la imagen destacada por página(cms), productos y categorías.
